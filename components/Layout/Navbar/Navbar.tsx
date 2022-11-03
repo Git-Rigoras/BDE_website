@@ -1,19 +1,13 @@
-import { navbar } from "config";
-
-import NavbarLink from "components/Layout/Navbar/NavbarLink";
+import NavbarLinkList from "components/Layout/Navbar/NavbarLinkList";
+import NavbarAccount from "components/Layout/Navbar/NavbarAccount";
 
 const Navbar = () => {
-  const { links } = navbar;
-
-  return (
-    <nav className="grid place-items-center">
-      <ul>
-        {links.map((link) => (
-          <NavbarLink link={link} key={`nav-link-${link.href}`} />
-        ))}
-      </ul>
-    </nav>
-  );
+	return (
+		<nav className="flex justify-between items-center shadow-lg">
+			<NavbarLinkList />
+			<NavbarAccount />
+		</nav>
+	);
 };
 
 export default Navbar;
