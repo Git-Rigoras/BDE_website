@@ -1,21 +1,21 @@
 import { redirect } from "next/navigation";
 import { cookies } from "next/headers";
 
-import SignInForm from "components/Auth/SignInForm";
+import LoginForm from "components/Auth/LoginForm";
 
 const SignInPage = async () => {
-	const token = cookies().get("next-auth.session-token");
-	const csrfToken = cookies().get("next-auth.csrf-token");
+  const token = cookies().get("next-auth.session-token");
+  const csrfToken = cookies().get("next-auth.csrf-token");
 
-	if (token?.value) {
-		redirect("/");
-	}
+  if (token?.value) {
+    redirect("/");
+  }
 
-	if (!csrfToken?.value) {
-		redirect("/");
-	}
+  if (!csrfToken?.value) {
+    redirect("/");
+  }
 
-	return <SignInForm csrfToken={csrfToken.value} />;
+  return <LoginForm />;
 };
 
 export default SignInPage;
