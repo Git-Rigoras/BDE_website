@@ -13,7 +13,7 @@ export const navbar = {
     },
     {
       href: "/evenements",
-      title: "Évévenements",
+      title: "Événements",
     },
     {
       href: "/equipe",

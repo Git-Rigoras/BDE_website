@@ -1,15 +1,9 @@
-"use client";
+import EmailForm from "components/Contact/EmailForm";
 
 const ContactPage = () => {
-  const handleSendContactEmail = () => {
-    fetch("/api/emails/contact", {
-      method: "POST",
-    });
-  };
-
   return (
-    <div>
-      <button onClick={() => handleSendContactEmail()}>Send email</button>
+    <div className="w-screen flex justify-center p-32">
+      <EmailForm />
     </div>
   );
 };
