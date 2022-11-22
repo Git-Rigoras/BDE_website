@@ -3,24 +3,24 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import type { Social } from "config";
 
 type Props = {
-  social: Social;
+	social: Social;
 };
 
 const FooterSocial = (props: Props) => {
-  const { social } = props;
+	const { social } = props;
 
-  return (
-    <a
-      href={social.href}
-      className="p-1"
-    >
-      <FontAwesomeIcon
-        icon={social.icon}
-        fixedWidth
-        className="text-xl"
-      />
-    </a>
-  );
+	return (
+		<a
+			href={social.href}
+			className="p-1"
+		>
+			<FontAwesomeIcon
+				icon={social.icon}
+				fixedWidth
+				className="text-xl hover:text-primary transition-all"
+			/>
+		</a>
+	);
 };
 
 export default FooterSocial;
