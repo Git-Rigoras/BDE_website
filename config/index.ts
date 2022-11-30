@@ -39,19 +39,9 @@ export const footer = {
 	],
 	socials: <Array<Social>>[
 		{
-			href: "https://instagram.com/",
+			href: "https://instagram.com/bde_cesi_rouen",
 			title: "Instagram",
 			icon: faInstagram,
-		},
-		{
-			href: "https://tiktok.com/",
-			title: "TikTok",
-			icon: faTiktok,
-		},
-		{
-			href: "https://discord.com/",
-			title: "Discord",
-			icon: faDiscord,
 		},
 	],
 };

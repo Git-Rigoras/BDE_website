@@ -13,6 +13,7 @@ const FooterSocial = (props: Props) => {
 		<a
 			href={social.href}
 			className="p-1"
+			target={"_blank"}
 		>
 			<FontAwesomeIcon
 				icon={social.icon}
