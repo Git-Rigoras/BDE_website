@@ -50,99 +50,84 @@ export const legal = {
 	copyright: "Copyright © 2022 - Tous droits réservés",
 };
 
-export const team = {
-	presidence: {
-		coPresident1: {
-			firstName: "Romain",
-			lastName: "Gircourt",
-			role: "Co-Président",
-		},
-		coPresident2: {
-			firstName: "Luca",
-			lastName: "Gonçalves",
-			role: "Co-Président",
-		},
-		vicePresident: {
-			firstName: "Cyprien",
-			lastName: "Peschet",
-			role: "Vice-Président",
-		},
-		treasury: {
-			firstName: "Eloïse",
-			lastName: "Normoy",
-			role: "Trésorière",
-		},
-		poles: [
+export const poles = [
+	{
+		name: "presidence",
+		users: [
 			{
-				pole: "Événement",
-				leader: {
-					firstName: "Sébastien",
-					lastName: "Aubert",
-				},
-				members: [
-					{
-						firstName: "Nicolas",
-						lastName: "Thieulin",
-					},
-					{
-						firstName: "Dilan",
-						lastName: "Thieulin",
-					},
-					{
-						firstName: "Antoine",
-						lastName: "Gueroult",
-					},
-					{
-						firstName: "Erwan",
-						lastName: "Vigier",
-					},
-					{
-						firstName: "Dorian",
-						lastName: "Chesnais",
-					},
-					{
-						firstName: "Alexandre",
-						lastName: "Mailly",
-					},
-				],
+				name: "vice président",
+				image: "public/team/vice_président.jpg",
 			},
 			{
-				pole: "Club",
-				leader: {
-					firstName: "Matthieu",
-					lastName: "Michel",
-				},
-				members: [
-					{
-						firstName: "Maxence",
-						lastName: "Barbe Pillon",
-					},
-				],
-			},
-			{
-				pole: "Communication",
-				leader: {
-					firstName: "Lisa",
-					lastName: "Rattier",
-				},
-				members: [
-					{
-						firstName: "Coline",
-						lastName: "Coelho",
-					},
-					{
-						firstName: "Samuel",
-						lastName: "Ward",
-					},
-					{
-						firstName: "Tristan",
-						lastName: "Jehanno",
-					},
-				],
+				name: "Co présidents",
+				image: "public/team/coprésidents.jpg",
 			},
 		],
 	},
-};
+	{
+		name: "administration",
+		users: [
+			{
+				name: "Secrétaire",
+				image:
+					"/home/tjehanno@mmtt.fr/Documents/Projects/next-bde-delta/public/team/secrétaire.jpg",
+			},
+			{
+				name: "Trésorière",
+				image: "public/team/trésorière.jpg",
+			},
+		],
+	},
+	{
+		name: "events",
+		users: [
+			{
+				name: "Responsable pôle évenement",
+				image: "public/team/responsable_event.jpg",
+				responsable: true,
+			},
+			{
+				name: "Pole évenement - Soirées",
+				image: "public/team/event_soirée.jpg",
+			},
+			{
+				name: "Pole évenement - Sport",
+				image: "public/team/event_sport.jpg",
+			},
+		],
+	},
+	{
+		name: "club",
+		users: [
+			{
+				name: "Responsable du pôle club",
+				image: "public/team/responsable_club.jpg",
+				responsable: true,
+			},
+			{
+				name: "Pôle Club",
+				image: "public/team/club.jpg",
+			},
+		],
+	},
+	{
+		name: "communication",
+		users: [
+			{
+				name: "Responsable du pôle communication",
+				image: "public/team/responsable_communication.jpg",
+			},
+			{
+				name: "Pôle communication",
+				image: "public/team/communication.jpg",
+			},
+			{
+				name: "Pôle communication - Site",
+				image: "public/team/communication_site.jpg",
+			},
+		],
+	},
+];
 
 export const noFooterPaths = [];
 
