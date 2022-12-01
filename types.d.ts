@@ -23,5 +23,10 @@ type TeamUser = {
 type UserDetail = {
 	fname: string;
 	lname: string;
-	contact: string;
+	contact: Contact;
+};
+
+type Contact = {
+	mail: string;
+	insta?: string;
 };

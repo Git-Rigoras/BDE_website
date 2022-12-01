@@ -61,12 +61,16 @@ export const poles: Pole[] = [
 					{
 						fname: "Romain",
 						lname: "GIRCOURT",
-						contact: "romain.gircourt@viacesi.fr",
+						contact: {
+							mail: "romain.gircourt@viacesi.fr",
+						},
 					},
 					{
 						fname: "Luca",
 						lname: "GONCALVES",
-						contact: "luca.goncalves@viacesi.fr",
+						contact: {
+							mail: "luca.goncalves@viacesi.fr",
+						},
 					},
 				],
 			},
@@ -77,7 +81,9 @@ export const poles: Pole[] = [
 					{
 						fname: "Cyprien",
 						lname: "PESCHET",
-						contact: "cyprien.preschet@viacesi.fr",
+						contact: {
+							mail: "cyprien.peschet@viacesi.fr",
+						},
 					},
 				],
 			},
@@ -89,10 +95,28 @@ export const poles: Pole[] = [
 			{
 				name: "Secrétaire",
 				image: "/images/team/secrétaire.jpg",
+				details: [
+					{
+						fname: "Thomas",
+						lname: "LE MONNIER",
+						contact: {
+							mail: "thomas.lemonnier@viacesi.fr",
+						},
+					},
+				],
 			},
 			{
 				name: "Trésorière",
 				image: "/images/team/trésorière.jpg",
+				details: [
+					{
+						fname: "Éloïse",
+						lname: "NORMOY",
+						contact: {
+							mail: "eloise.normoy@viacesi.fr",
+						},
+					},
+				],
 			},
 		],
 	},
@@ -103,14 +127,69 @@ export const poles: Pole[] = [
 				name: "Responsable pôle évenement",
 				image: "/images/team/responsable_event.jpg",
 				responsable: true,
+				details: [
+					{
+						fname: "Sébastien",
+						lname: "AUBERT",
+						contact: {
+							mail: "sebastien.aubert@viacesi.fr",
+						},
+					},
+				],
 			},
 			{
 				name: "Pole évènement - Soirées",
 				image: "/images/team/event_soirée.jpg",
+				details: [
+					{
+						fname: "Alexandre",
+						lname: "MAILLY",
+						contact: {
+							mail: "alexandre.mailly@viacesi.fr",
+						},
+					},
+					{
+						fname: "Erwan",
+						lname: "VIGIER",
+						contact: {
+							mail: "erwan.vigier@viacesi.fr",
+						},
+					},
+					{
+						fname: "Dorian",
+						lname: "CHESNAIS",
+						contact: {
+							mail: "dorian.chesnais@viacesi.fr",
+						},
+					},
+				],
 			},
 			{
 				name: "Pole évenement - Sport",
 				image: "/images/team/event_sport.jpg",
+				details: [
+					{
+						fname: "Antoine",
+						lname: "GUEROULT",
+						contact: {
+							mail: "antoine.gueroult@viacesi.fr",
+						},
+					},
+					{
+						fname: "Nicolas",
+						lname: "THIEULIN",
+						contact: {
+							mail: "nicolas.thieulin@viacesi.fr",
+						},
+					},
+					{
+						fname: "Dilan",
+						lname: "THIEULIN",
+						contact: {
+							mail: "dilan.thieulin@viacesi.fr",
+						},
+					},
+				],
 			},
 		],
 	},
@@ -121,10 +200,28 @@ export const poles: Pole[] = [
 				name: "Responsable du pôle club",
 				image: "/images/team/responsable_club.jpg",
 				responsable: true,
+				details: [
+					{
+						fname: "Matthieu",
+						lname: "MICHEL",
+						contact: {
+							mail: "matthieu.michel@viacesi.fr",
+						},
+					},
+				],
 			},
 			{
 				name: "Pôle Club",
 				image: "/images/team/club.jpg",
+				details: [
+					{
+						fname: "Maxence",
+						lname: "BARBE PILLON",
+						contact: {
+							mail: "maxence.barbepillon@viacesi.fr",
+						},
+					},
+				],
 			},
 		],
 	},
@@ -135,14 +232,49 @@ export const poles: Pole[] = [
 				name: "Responsable du pôle communication",
 				image: "/images/team/responsable_communication.jpg",
 				responsable: true,
+				details: [
+					{
+						fname: "Lisa",
+						lname: "RATTIER",
+						contact: {
+							mail: "lisa.rattier@viacesi.fr",
+						},
+					},
+				],
 			},
 			{
 				name: "Pôle communication",
 				image: "/images/team/communication.jpg",
+				details: [
+					{
+						fname: "Coline",
+						lname: "COELHO",
+						contact: {
+							mail: "coline.coelho@viacesi.fr",
+						},
+					},
+				],
 			},
 			{
 				name: "Pôle communication - Site",
 				image: "/images/team/communication_site.jpg",
+				details: [
+					{
+						fname: "Tristan",
+						lname: "JEHANNO",
+						contact: {
+							mail: "tristan.jehanno@viacesi.fr",
+							insta: "tritriexception",
+						},
+					},
+					{
+						fname: "Samuel",
+						lname: "WARD",
+						contact: {
+							mail: "samuel.ward@teaminfernal.fr",
+						},
+					},
+				],
 			},
 		],
 	},

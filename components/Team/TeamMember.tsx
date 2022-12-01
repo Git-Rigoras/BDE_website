@@ -10,7 +10,7 @@ const TeamMember = (props: any) => {
 	const [details, setDetails] = useState<boolean>(false);
 	return (
 		<div
-			className={cn("swap", { "swap-active": !details })}
+			className={cn("swap cursor-default", { "swap-active": !details })}
 			onMouseEnter={() => setDetails(true)}
 			onMouseLeave={() => setDetails(false)}
 		>
