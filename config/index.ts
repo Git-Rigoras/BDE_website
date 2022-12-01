@@ -50,80 +50,99 @@ export const legal = {
 	copyright: "Copyright © 2022 - Tous droits réservés",
 };
 
-export const poles = [
+export const poles: Pole[] = [
 	{
-		name: "presidence",
+		name: "Présidence",
 		users: [
 			{
-				name: "vice président",
-				image: "public/team/vice_président.jpg",
+				name: "Co présidents",
+				image: "/images/team/coprésidents.jpg",
+				details: [
+					{
+						fname: "Romain",
+						lname: "GIRCOURT",
+						contact: "romain.gircourt@viacesi.fr",
+					},
+					{
+						fname: "Luca",
+						lname: "GONCALVES",
+						contact: "luca.goncalves@viacesi.fr",
+					},
+				],
 			},
 			{
-				name: "Co présidents",
-				image: "public/team/coprésidents.jpg",
+				name: "vice président",
+				image: "/images/team/vice_président.jpg",
+				details: [
+					{
+						fname: "Cyprien",
+						lname: "PESCHET",
+						contact: "cyprien.preschet@viacesi.fr",
+					},
+				],
 			},
 		],
 	},
 	{
-		name: "administration",
+		name: "Administration",
 		users: [
 			{
 				name: "Secrétaire",
-				image:
-					"/home/tjehanno@mmtt.fr/Documents/Projects/next-bde-delta/public/team/secrétaire.jpg",
+				image: "/images/team/secrétaire.jpg",
 			},
 			{
 				name: "Trésorière",
-				image: "public/team/trésorière.jpg",
+				image: "/images/team/trésorière.jpg",
 			},
 		],
 	},
 	{
-		name: "events",
+		name: "Pôle évènements",
 		users: [
 			{
 				name: "Responsable pôle évenement",
-				image: "public/team/responsable_event.jpg",
+				image: "/images/team/responsable_event.jpg",
 				responsable: true,
 			},
 			{
-				name: "Pole évenement - Soirées",
-				image: "public/team/event_soirée.jpg",
+				name: "Pole évènement - Soirées",
+				image: "/images/team/event_soirée.jpg",
 			},
 			{
 				name: "Pole évenement - Sport",
-				image: "public/team/event_sport.jpg",
+				image: "/images/team/event_sport.jpg",
 			},
 		],
 	},
 	{
-		name: "club",
+		name: "Pôle clubs",
 		users: [
 			{
 				name: "Responsable du pôle club",
-				image: "public/team/responsable_club.jpg",
+				image: "/images/team/responsable_club.jpg",
 				responsable: true,
 			},
 			{
 				name: "Pôle Club",
-				image: "public/team/club.jpg",
+				image: "/images/team/club.jpg",
 			},
 		],
 	},
 	{
-		name: "communication",
+		name: "Pôle communication",
 		users: [
 			{
 				name: "Responsable du pôle communication",
-				image: "public/team/responsable_communication.jpg",
+				image: "/images/team/responsable_communication.jpg",
+				responsable: true,
 			},
 			{
 				name: "Pôle communication",
-				image: "public/team/communication.jpg",
+				image: "/images/team/communication.jpg",
 			},
 			{
 				name: "Pôle communication - Site",
-				image: "public/team/communication_site.jpg",
+				image: "/images/team/communication_site.jpg",
 			},
 		],
 	},
