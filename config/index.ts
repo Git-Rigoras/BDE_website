@@ -19,14 +19,14 @@ export const navbar = {
 			href: "/clubs",
 			title: "Clubs",
 		},
-		{
-			href: "/evenements",
-			title: "Événements",
-		},
-		{
-			href: "/boutique",
-			title: "Boutique",
-		},
+		// {
+		// 	href: "/evenements",
+		// 	title: "Événements",
+		// },
+		// {
+		// 	href: "/boutique",
+		// 	title: "Boutique",
+		// },
 	],
 };
 
