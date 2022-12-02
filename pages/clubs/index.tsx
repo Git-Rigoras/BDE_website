@@ -1,6 +1,7 @@
 import type { Club, ClubOwner } from "@prisma/client";
 
 import Clubs from "components/Clubs/Clubs";
+import Title from "components/Misc/Title";
 
 import { prisma } from "lib/prisma";
 
@@ -16,9 +17,12 @@ const ClubsPage = (props: Props) => {
 	const { clubs } = props;
 
 	return (
-		<div className="py-10 flex justify-center">
-			<Clubs clubs={clubs} />
-		</div>
+		<>
+			<Title content="Clubs | BDE CESI Rouen" />
+			<div className="py-10 flex justify-center">
+				<Clubs clubs={clubs} />
+			</div>
+		</>
 	);
 };
 

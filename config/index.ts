@@ -1,9 +1,15 @@
-import {
-	faInstagram,
-	faTiktok,
-	faDiscord,
-	IconDefinition,
-} from "@fortawesome/free-brands-svg-icons";
+import { IconDefinition } from "@fortawesome/free-brands-svg-icons";
+
+export const app = {
+	name: "BDE CESI ROUEN",
+	socials: [
+		{
+			name: "Instagram",
+			link: "https://instagram.com/bde_cesi_rouen",
+		},
+	],
+	partners: [],
+};
 
 export const navbar = {
 	links: <Array<Link>>[
@@ -19,31 +25,19 @@ export const navbar = {
 			href: "/clubs",
 			title: "Clubs",
 		},
-		// {
-		// 	href: "/evenements",
-		// 	title: "Événements",
-		// },
-		// {
-		// 	href: "/boutique",
-		// 	title: "Boutique",
-		// },
+		{
+			href: "/evenements",
+			title: "Évènements",
+		},
+		{
+			href: "/boutique",
+			title: "Boutique",
+		},
 	],
 };
 
 export const footer = {
-	links: <Array<Link>>[
-		{
-			href: "/contact",
-			title: "Nous contacter",
-		},
-	],
-	socials: <Array<Social>>[
-		{
-			href: "https://instagram.com/bde_cesi_rouen",
-			title: "Instagram",
-			icon: faInstagram,
-		},
-	],
+	about: navbar.links,
 };
 
 export const legal = {
@@ -124,7 +118,7 @@ export const poles: Pole[] = [
 		name: "Pôle évènements",
 		users: [
 			{
-				name: "Responsable pôle évenement",
+				name: "Responsable pôle évènement",
 				image: "/images/team/responsable_event.jpg",
 				responsable: true,
 				details: [

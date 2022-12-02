@@ -2,7 +2,19 @@
 module.exports = {
 	content: ["./components/**/*.tsx", "./pages/**/*.tsx"],
 	theme: {
-		extend: {},
+		extend: {
+			animation: {
+				"fade-in-up": "fadeInUp 500ms ease",
+			},
+			keyframes: {
+				fadeInUp: {
+					"0%": {
+						transform: "translateY(20px)",
+						opacity: "0",
+					},
+				},
+			},
+		},
 	},
 	daisyui: {
 		themes: [

@@ -26,7 +26,10 @@ const TeamMember = (props: any) => {
 			<div className="card bg-base-100 w-[25rem] h-[25-rem] flex overflow-hidden swap-off">
 				<div className="card-body border-secondary border-4 rounded-2xl">
 					{userDetails?.map((userDetail: UserDetail) => (
-						<UserDetails details={userDetail}></UserDetails>
+						<UserDetails
+							key={`${userDetail.fname}${userDetail.lname}`}
+							details={userDetail}
+						></UserDetails>
 					))}
 					<div className="card-actions justify-end"></div>
 				</div>

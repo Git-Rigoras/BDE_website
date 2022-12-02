@@ -15,8 +15,8 @@ const Clubs = (props: Props) => {
 
 	return (
 		<div className="max-w-6xl m-12">
-			<h1 className="text-3xl font-semibold underline decoration-secondary mb-16 uppercase">
-				Clubs
+			<h1 className="text-5xl text-center font-semibold underline decoration-secondary mb-16 uppercase">
+				Les clubs
 			</h1>
 			<div className="flex flex-col gap-8">
 				{clubs.map(club => (

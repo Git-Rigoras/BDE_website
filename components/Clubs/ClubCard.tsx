@@ -1,3 +1,6 @@
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faInstagram } from "@fortawesome/free-brands-svg-icons";
+import { faPaperPlane, faUserTie } from "@fortawesome/free-solid-svg-icons";
 import type { Club, ClubOwner } from "@prisma/client";
 import Image from "next/image";
 
@@ -27,10 +30,24 @@ const ClubCard = (props: Props) => {
 				<h2 className="text-2xl font-semibold">{club.name}</h2>
 				<p className="text-justify">{club.description}</p>
 				<div className="mt-auto flex flex-col gap-2">
-					{!!owner.name && <span className="font-semibold">{owner.name}</span>}
+					{!!owner.name && (
+						<span className="flex items-center gap-2">
+							<FontAwesomeIcon
+								icon={faUserTie}
+								fixedWidth
+								className="text-primary"
+							/>
+							<span className="font-semibold">{owner.name}</span>
+						</span>
+					)}
 
 					{!!owner.contact && (
-						<span>
+						<span className="flex items-center gap-2">
+							<FontAwesomeIcon
+								icon={faPaperPlane}
+								fixedWidth
+								className="text-primary"
+							/>
 							<a
 								href={`${isEmail ? "mailto:" : ""}${owner.contact}`}
 								className="link link-hover decoration-secondary"
@@ -42,13 +59,18 @@ const ClubCard = (props: Props) => {
 					)}
 
 					{!!owner.instagram && (
-						<span>
+						<span className="flex items-center gap-2">
+							<FontAwesomeIcon
+								icon={faInstagram}
+								fixedWidth
+								className="text-primary"
+							/>
 							<a
 								href={`https://instagram.com/${owner.instagram}`}
 								className="link link-hover decoration-secondary"
 								target={"_blank"}
 							>
-								@{owner.instagram}
+								{owner.instagram}
 							</a>
 						</span>
 					)}
