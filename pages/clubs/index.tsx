@@ -3,7 +3,7 @@ import type { Club, ClubOwner } from "@prisma/client";
 import Clubs from "components/Clubs/Clubs";
 import Title from "components/Misc/Title";
 
-import { prisma } from "lib/prisma";
+import { clubs } from "config/index"
 
 type Props = {
 	clubs: Array<
@@ -27,11 +27,6 @@ const ClubsPage = (props: Props) => {
 };
 
 const getServerSideProps = async () => {
-	const clubs = await prisma.club.findMany({
-		include: {
-			owner: true,
-		},
-	});
 	const serializedClubs = JSON.parse(JSON.stringify(clubs));
 
 	return {

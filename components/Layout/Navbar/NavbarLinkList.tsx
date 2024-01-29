@@ -6,7 +6,7 @@ const NavbarLinkList = () => {
 	const { links } = navbar;
 
 	return (
-		<ul className="flex">
+		<ul className="flex flex-wrap">
 			{links.map((link, index) => (
 				<NavbarLink
 					link={link}
